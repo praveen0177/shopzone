@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyment Methoed</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div id="product-section">
+    <div class="product" onclick="openPaymentModal('product1.jpg', 'productName', 'productPrice')">
+      <img src="product1.jpg" alt="Product 1">
+      <button>ok</button>
+      <p>Product 1</p>
+    </div>
+    <!-- More products as needed -->
+  </div>
+  
+  <!-- Payment Modal -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePaymentModal()">&times;</span>
+      <img id="product-image" src="" alt="Selected Product">
+      <h2 id="product-name">Product Name</h2>
+      <p id="product-price">$0.00</p>
+      <form id="payment-form">
+        <div id="card-element"></div> <!-- Stripe injects Card Element here -->
+        <button id="submit-button">Pay Now</button>
+        <div id="payment-status" class="status-message"></div>
+      </form>
+    </div>
+  </div>
+  
+     
+
+  <script src="payment.js"></script>
+</body>
+</html>

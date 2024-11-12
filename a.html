@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Kumar Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic reset and full screen for Three.js background */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation Styling */
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00ffcc;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            z-index: 10;
+            padding-top: 20%;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            background-color: #00ffcc;
+            border: none;
+            color: black;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #009999;
+        }
+
+        .hero img {
+            margin-top: 30px;
+            width: 200px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+        }
+
+        /* About Section Styling */
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 20px;
+            gap: 50px;
+        }
+
+        .about .image img {
+            border-radius: 50%;
+            width: 250px;
+            border: 5px solid #fff;
+        }
+
+        .about-content {
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .about-content span {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #00ffcc;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        /* Timeline Section Styling */
+        .timeline-item {
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.5rem;
+            color: #00ffcc;
+        }
+
+        .timeline-item .timeline-date {
+            font-size: 1.1rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <!-- Three.js Container -->
+    <div id="threejs-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">EDUCATION</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Praveen Kumar</h1>
+        <p>Hi, I'm Praveen Kumar, a passionate web developer specializing in creating dynamic and user-friendly websites.</p>
+        <button>Get Resume</button>
+        <img src="Praveen.png" alt="Praveen Kumar">
+    </div>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="image">
+            <img src="Praveen.png" alt="Praveen Kumar">
+        </div>
+        <div class="about-content">
+            <span>About Me</span>
+            <p>I am Praveen Kumar, a passionate web developer and DevOps enthusiast with expertise in both frontend technologies and cloud infrastructure. With a strong foundation in HTML, CSS, Bootstrap, and JavaScript, I enjoy creating clean, responsive web applications. My proficiency in React allows me to build dynamic user interfaces that enhance user experiences.</p>
+            <br>
+            <p>In addition to frontend development, I specialize in AWS and DevOps, focusing on CI/CD pipelines to automate and streamline deployment processes. My experience with AWS DevOps enables me to manage cloud infrastructures efficiently, ensuring scalability, security, and performance for projects.</p>
+            <br>
+            <p>Whether it's developing modern web applications or automating workflows, I am committed to delivering high-quality solutions that meet both technical and business goals.</p>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section>
+        <div class="timeline-item">
+            <h3>Bachelor of Computer Science</h3>
+            <span class="timeline-date">2019 - 2024</span>
+            <p>Bharatidasan University</p>
+            <p>Graduating with distinction, I focused on full-stack web development, algorithms, and data structures.</p>
+            <p>Percentage: 82%</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Secondary School</h3>
+            <span class="timeline-date">2019</span>
+            <p>Government, Secondary School</p>
+            <p>Major in Computer Science with an emphasis on Mathematics and Physics.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>High School</h3>
+            <span class="timeline-date">2017</span>
+            <p>St. Joseph's High School</p>
+            <p>Completed with high honors, excelling in Mathematics and Science.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="social_icon">
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+        <p>&copy; 2024 Praveen Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <!-- Three.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('threejs-container').appendChild(renderer.domElement);
+
+        // Create a cube and add it to the scene
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ffcc });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        // Add lighting
+        const light = new THREE.PointLight(0xffffff, 1, 100);
+        light.position.set(10, 10, 10);
+        scene.add(light);
+
+        // Set camera position
+        camera.position.z = 5;
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Rotate the cube
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+</html>

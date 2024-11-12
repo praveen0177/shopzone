@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exampleone.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <header>
+        <div class="menu">
+        <table>
+        <tr>
+        <td> <h2 class="name_brand">
+          SHOPING NOW
+        </h2>
+        </td>
+        
+        <td>
+          <form class="d-flex">
+            <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </td>
+        <td>
+        <span>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">Account 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Orders</a>
+              <a href="#">Wishlist</a>
+              <a href="#">LogIn/LogOut</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn cart"><i class="fa fa-shopping-cart"></i> <span class="value">2</span>
+            </button>
+            <div class="dropdown-content cart-content">
+              <a>
+              <ul>
+              <li>
+              <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Item">
+              </li>
+              <li>
+              <span class="title">Samsung Galaxy POP</span>
+              <span class="sub-title"><i class="fa fa-rupee"></i>5999<span>
+              </li>
+              <li><i class="fa fa-trash"></i></li>
+              </ul>
+              <ul>
+              <li>
+              <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Item">
+              </li>
+              <li>
+              <span class="title">Samsung Galaxy POP</span>
+              <span class="sub-title"><i class="fa fa-rupee"></i>5999<span>
+              </li>
+              <li><i class="fa fa-trash"></i></li>
+              </ul>
+              <button type="submit" class="btn1">CheckOut</button>
+              </a>
+            </div>
+          </div> 
+        </div>
+        </span>
+        </td>
+        </tr>
+        </table>
+        </div>
+        
+        <div class="topnav" id="myTopnav">
+          <div class="dropdown">
+            <button class="dropbtn">Electronics 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content mega-dropdown">
+              <div class="row  column1">
+                <div class="column">
+                  <h3>Mobiles</h3>
+                  <a href="#">Mi</a>
+                  <a href="#">Samsung</a>
+                  <a href="#">RealMe</a>
+                </div>
+                <div class="column">
+                  <h3>Mobile Accessories</h3>
+                  <a href="#">Power Bank</a>
+                  <a href="#">OTG</a>
+                  <a href="#">Covers</a>
+                </div>
+                <div class="column">
+                  <h3>Speakers</h3>
+                  <a href="#">Home Theater</a>
+                  <a href="#">Portable</a>
+                  <a href="#">Sound Bars</a>
+                </div>
+                <div class="column">
+                  <h3>Featured</h3>
+                  <a href="#">Apple Store</a>
+                  <a href="#">Mcrosoft Store</a>
+                  <a href="#">Inferno Store</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">Men & Women 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content mega-dropdown">
+              <div class="row">
+                <div class="column">
+                  <h3>Clothing</h3>
+                  <a href="#">Men Jeans</a>
+                  <a href="#">Women Jeggings</a>
+                  <a href="#">Trousers</a>
+                </div>
+                <div class="column">
+                  <h3>Grooming</h3>
+                  <a href="#">Perfumes</a>
+                  <a href="#">Deodrants</a>
+                  <a href="#">Hair Groom</a>
+                </div>
+                <div class="column">
+                  <h3>Footware</h3>
+                  <a href="#">Casual</a>
+                  <a href="#">Boots</a>
+                  <a href="#">Slippers</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">Home & Furniture 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content mega-dropdown">
+              <div class="row">
+                <div class="column">
+                  <h3>Kitchen</h3>
+                  <a href="#">Cook Ware</a>
+                  <a href="#">Electric Corner</a>
+                  <a href="#">Infrastructure</a>
+                </div>
+                <div class="column">
+                  <h3>Home Improvements</h3>
+                  <a href="#">Cleaners</a>
+                  <a href="#">Perfumes</a>
+                  <a href="#">Sanitizer</a>
+                </div>
+                <div class="column">
+                  <h3>Living Room</h3>
+                  <a href="#">Lightning</a>
+                  <a href="#">Dining Table</a>
+                  <a href="#">Jugs</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">Sport & Fitness 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content mega-dropdown">
+              <div class="row">
+                <div class="column">
+                  <h3>Sport</h3>
+                  <a href="#">Cricket</a>
+                  <a href="#">Football</a>
+                  <a href="#">Volley Ball</a>
+                </div>
+                <div class="column">
+                  <h3>Fitness</h3>
+                  <a href="#">Dumbells</a>
+                  <a href="#">Mini-Set</a>
+                  <a href="#">Powders</a>
+                </div>
+                <div class="column">
+                  <h3>Featured</h3>
+                  <a href="#">Suppliments</a>
+                  <a href="#">Gadgets</a>
+                  <a href="#">Kits</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">Kids Store 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content mega-dropdown">
+              <div class="row">
+                <div class="column">
+                  <h3>Toys</h3>
+                  <a href="#">Dolls</a>
+                  <a href="#">E-Gadgets</a>
+                  <a href="#">Tabs</a>
+                </div>
+                <div class="column">
+                  <h3>Books</h3>
+                  <a href="#">Story Books</a>
+                  <a href="#">Educational</a>
+                  <a href="#">Guidlines</a>
+                </div>
+                <div class="column">
+                  <h3>Care</h3>
+                  <a href="#">Body Care</a>
+                  <a href="#">Hair Care</a>
+                  <a href="#">Growth</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">More 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Notifications</a>
+              <a href="#">Customer Care</a>
+              <a href="#">Download App</a>
+            </div>
+          </div> 
+          
+          <a href="#about">Coupons</a>
+          
+          <div class="dropdown responsive">
+            <button class="dropbtn">Account 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Orders</a>
+              <a href="#">Wishlist</a>
+              <a href="#">Login</a>
+            </div>
+          </div> 
+          
+          
+          <div class="dropdown responsive">
+            <button class="dropbtn"><i class="fa fa-shopping-cart"></i><span class="value">2</span>
+            </button>
+            <div class="dropdown-content">
+              <a>
+                    <ul>
+              <li>
+              <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Item">
+              </li>
+              <li>
+              <span class="title">Samsung Galaxy POP</span>
+              <span class="sub-title"><i class="fa fa-rupee"></i>5999<span>
+              </li>
+              <li><i class="fa fa-trash"></i></li>
+              </ul>
+              <ul>
+              <li>
+              <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Item">
+              </li>
+              <li>
+              <span class="title">Samsung Galaxy POP</span>
+              <span class="sub-title"><i class="fa fa-rupee"></i>5999<span>
+              </li>
+              <li><i class="fa fa-trash"></i></li>
+              </ul>
+              <button type="submit" class="btn1">CheckOut</button>
+              </a>
+            </div>
+          </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        </header>
+        
+        
+        <!--CAROUSEL-->
+        <div class="content-width">
+          <div class="slideshow">
+            <!-- Slideshow Items -->
+            <div class="slideshow-items">
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="4028484.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>Striking Deals On <em>All Furniture</em></em></b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part desc">
+                    <b>Offers you cannot miss! upto 80% off</b>
+                  </span>  
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="5092393.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>Top Deals On <em>Men's Ware</em></b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part desc">
+                    <b>Upto 10% off on cart value more than <i class="fa fa-rupee"></i>5000</b>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="https://i.ibb.co/GJ9C3kV/slide3.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part" style="color:rgb(0, 0, 0);"><b>ShopNow On <em>Today</em></b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part desc" style="color:rgb(12, 12, 12);">
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="controls">
+              <ul>
+                <li class="control" data-index="0"></li>
+                <li class="control" data-index="1"></li>
+                <li class="control" data-index="2"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <section class="section1">
+          
+          <div class="add-card" style="background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOx6_gA6HdtLfo6RvedJGuMCtYjl66BFRDAw&s);">
+        <section>
+        <span class="title">Mobile Collection</span>
+        <span class="sub-title">Upto 25% Off On Washing Machines</span>
+        <a href="mobilecoll.html" class="btn1">Grab Now</a>
+        
+        </section>
+        </div>
+        <div class="add-card" style="background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url(data:image/jpeg;base64,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);">
+        <section>
+        <span class="title">Men's Wear</span>
+        <span class="sub-title">Upto 25% Off On Washing Machines</span>
+        <a href="menswear.html" class="btn1">Grab Now</a>
+        </section>
+        </div>
+        <div class="add-card" style="background: linear-gradient(rgba(1,1,1,.5), rgba(1,1,1,.5)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3Vb2WiltVXELQQ5sKJExSZwSJoIYetOLmA&s);">
+        <section>
+        <span class="title">Furniture</span>
+        <span class="sub-title">Upto 25% Off On Washing Machines</span>
+        <a href="furniture.html" class="btn1">Grab Now</a>
+        </section>
+        </div>
+        </section>
+        
+        
+        <h1 class="title section2-header">DEALS OF THE DAY <span id="timer"><i class="fa fa-clock-o"></i></span></h1>
+        <section class="section2">
+        <div class="deal-card" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+        <img src="iphone.jpg" alt="Deals">
+        <span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+        <span class="tag-2"><i class="fa fa-times"></i> Sold Out</span>
+        <span class="title">Samsung Galaxy POP</span>
+        <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <a class="btn1 soldout" >SoldOut</a>
+        </div>
+        
+        <div class="deal-card" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)">
+        <img src="data:image/jpeg;base64,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" alt="Deals">
+        <span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+        <span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+        <span class="title">Samsung Galaxy POP</span>
+        <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <a class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i> 5999</a>
+        </div>
+        
+        <div class="deal-card" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+        <img src="data:image/jpeg;base64,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" alt="Deals">
+        <span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+        <span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+        <span class="title">Samsung Galaxy POP</span>
+        <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <a class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i> 5999</a>
+        </div>
+        
+        <div class="deal-card" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3c3ZIg9bxDVsSXyCkf3pOrm03cnwPhknkCChdiUTdDWxsCkz-fEC-t8Fus-wxePLojJg&usqp=CAU" alt="Deals">
+        <span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+        <span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+        <span class="title">Samsung Galaxy POP</span>
+        <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <a class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i> 5999</a>
+        </div>
+        
+        <div class="deal-card" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyMU5bgx28LBWl64G9w5yN7yEnigg99WgzYA&s" alt="Deals">
+        <span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+        <span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+        <span class="title">Samsung Galaxy POP</span>
+        <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <a class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i> 5999</a>
+        </div>
+        
+        <div class="deal-card" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOx6_gA6HdtLfo6RvedJGuMCtYjl66BFRDAw&s" alt="Deals">
+        <span class="discount"><i class="fa fa-percentage"></i> 20% OFF</span>
+        <span class="tag-1"><i class="fa fa-check-circle-o"></i> Available</span>
+        <span class="title">Samsung Galaxy POP</span>
+        <span class="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <a class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i> 5999</a>
+        </div>
+        
+        
+        <div class="deal-card advertise-card">
+        
+        </div>
+        </section>
+      
+      <!--blue nad black-->
+      <section id="tress">
+        <div class="card_hedphone" >
+          <div class="imgBx" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+              <img src="https://i.postimg.cc/259swWhF/22723ede15755b068b7a355e0ad5d65e-headphone-clipart-beats-headphone-pencil-and-in-color-headphone-10.png" alt="">
+          </div>
+          <div class="contextBx">
+              <h3>Wireless Headphone</h3>
+              <h2 class="price">$245<small>.22</small></h2>
+              <br>
+              <a class="buy" onclick="openPaymentForm('Helux Nautica', 50)">Buy now</a>
+          </div>
+        
+      </div>  
+      <div class="card_hedphone">
+          <div class="imgBx" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+              <img src="phone-removebg-preview.png" alt="">
+          </div>
+          <div class="contextBx">
+            <br>
+            <br>
+              <h3>IPhone</h3>
+              <h2 class="price">$245<small>.22</small></h2>
+              
+              <a class="buy" onclick="openPaymentForm('Helux Nautica', 50)">Buy now</a>
+          </div>
+      </div>
+      <div class="card_hedphone">
+        <div class="imgBx" data-name="Headphones" onclick="showPaymentForm('Headphones', 5999)" >
+            <img src="images__1_-removebg-preview.png" alt="">
+        </div>
+        <div class="contextBx">
+            <br>
+            <h3>Wireless Headphone</h3>
+            <h2 class="price">$245<small>.22</small></h2>
+            <br>
+            <a class="buy" onclick="openPaymentForm('Helux Nautica', 50)">Buy now</a>
+        </div>
+      
+      </div>  
+      <div class="card_hedphone">
+        <div class="imgBx" data-name="Headphones" onclick="showPaymentForm('Headphones', 245)" >
+            <img src="bluetooh-removebg-preview.png" alt="">
+        </div>
+        <div class="contextBx" >
+            <br>
+            <h3>Wireless Headphone</h3>
+            <h2 class="price">$245<small>.22</small></h2>
+            <br>
+            <a class="buy" onclick="openPaymentForm('Helux Nautica', 50)">Buy now</a>
+            
+        </div>
+      </div>
+      </section>
+        
+        
+        <div class="section3-header">
+        <span class="title">BASED ON YOUR INTEREST</span>
+        <a href="#" class="btn1 viewmore">View More</a>
+        <button class="next" onclick='scrollright()'><i class="fa fa-angle-right"></i></button>
+        <button class="previous" onclick='scrollleft()'><i class="fa fa-angle-left"></i></button>
+        </div>
+        <section class="section3" id="section3">
+        <div class="discount-card" onclick="openPaymentModal('product1.jpg', 'productName', 'productPrice')">
+        <img src="ligts.jpg" alt="Product">
+        
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        
+        <div class="discount-card">
+        <img src="laptop.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        
+        <div class="discount-card">
+        <img src="bag.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        
+        <div class="discount-card">
+        <img src="batle.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        
+        <div class="discount-card">
+        <img src="cheir.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        
+        <div class="discount-card">
+        <img src="tshirt.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        
+        <div class="discount-card">
+        <img src="tv.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram 500gb hard disk</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn1" onclick="openPaymentForm('Helux Nautica', 50)"><i class="fa fa-rupee"></i>9999</span> <strike><i class="fa fa-rupee"></i>10200</strike>
+        </div>
+        </section>
+    <!--watches-->
+
+    <div class="watch_poster">
+        <img src="watch.jpg">
+      </div>
+      <br>
+      <br>
+      
+        <section id="watchs">
+            <div class="watch_list">
+              <div class="product-list">
+                <div class="product" data-price="50">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Helux Nautica</h3>
+                      <p>$50</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="150">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/404181/pexels-photo-404181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Exquisit Atros</h3>
+                      <p>$150</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="250">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Helux Spielberg</h3>
+                      <p>$250</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="350">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/9897926/pexels-photo-9897926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Luminare Marine</h3>
+                      <p>$350</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="450">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/9897857/pexels-photo-9897857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Regalli Claustroph</h3>
+                      <p>$450</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="550">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/10436602/pexels-photo-10436602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Luminare Luxus</h3>
+                      <p>$550</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="650">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/10478973/pexels-photo-10478973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Regalli Hetchers</h3>
+                      <p>$650</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+                <div class="product" data-price="750">
+                  <div class="img">
+                      <img src="https://images.pexels.com/photos/10414981/pexels-photo-10414981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  <div class="info">
+                      <h3>Helux MVII</h3>
+                      <p>$750</p>
+                  </div>
+                  <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+                </div>
+              </div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+          </section>
+          
+          
+        <div class="section4-header">
+        <span class="title">DISCOUNT CORNER</span>
+        <a href="#" class="btn1 viewmore">View More</a>
+        <button class="next" onclick='scrollright4()'><i class="fa fa-angle-right"></i></button>
+        <button class="previous" onclick='scrollleft4()'><i class="fa fa-angle-left"></i></button>
+        </div>
+        <section class="section4" id="section4">
+        <div class="discount-card">
+        <img src="https://i.ibb.co/jGxYmxS/02.webp" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Chimney</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (930)
+        
+        </span>
+        <span class="btn2">Fast Sold</span>
+        <br>
+        <button onclick="openPaymentForm('Helux Nautica', 930)">Add to Cart</button>
+        </div>
+        
+        <div class="discount-card">
+        <img src="https://i.ibb.co/x7mNFvp/05.webp" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Casino Men's Classic</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        (2,400)
+        </span>
+        <span class="btn2">Grab Now</span>
+        <br>
+        <button onclick="openPaymentForm('Helux Nautica', 2,400)">Add to Cart</button>
+        </div>
+        
+        <div class="discount-card">
+        <img src="https://i.ibb.co/Mgjcss5/03.webp" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Mixer Juice Grinder</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (230)
+        </span>
+        <span class="btn2">30% Off</span>
+        <br>
+        <button onclick="openPaymentForm('Helux Nautica', 230)">Add to Cart</button>
+        </div>
+        
+        <div class="discount-card">
+        <img src="https://i.ibb.co/x7mNFvp/05.webp" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Casino Men's Classic</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        (2,400)
+        </span>
+        <span class="btn2">25% Off</span>
+        <br>
+        <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+        </div>
+        
+        <div class="discount-card">
+        <img src="https://i.ibb.co/jGxYmxS/02.webp" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Chimney</span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (930)
+        </span>
+        <span class="btn2">30% Off</span>
+        <br>
+        <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+        </div>
+        
+        <div class="discount-card">
+        <img src="https://i.ibb.co/RpnQq12/01.webp" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram </span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <br>
+        <br>
+        <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+        </div>
+        
+        <div class="discount-card">
+        <img src="camera.jpg" alt="Product">
+        <a href="#" class="like-button"><i class="fa fa-heart-o"></i></a>
+        <span class="title">Lenovo-na thin laptop with 4gb ram </span>
+        <span class="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        (1,030)
+        </span>
+        <span class="btn2">30% Off</span>
+      
+        <button onclick="openPaymentForm('Helux Nautica', 50)">Add to Cart</button>
+        </div>
+        </section>
+        
+        
+        
+        
+        
+        <!--ADDS-->
+        <center>
+        <div class="Advertisement">
+          <img class="myAdds" src="https://i.ibb.co/r5f5GgH/1.png" style="width:100%">
+          <img class="myAdds" src="https://i.ibb.co/bN4XFXp/2.png" style="width:100%">
+          <img class="myAdds" src="https://i.ibb.co/nfpZj9p/3.png" style="width:100%">
+        </div>
+        </center>
+        
+        
+        
+        
+        <section class="section6">
+        <table>
+        <tr>
+        <td>
+        <img src="https://i.ibb.co/sjTCyXj/app.png" alt="APP">
+        </td>
+        <td>
+        <span class="title">Download SHOPINGZONE App Now</span>
+        <span class="sub-title">Fast, Simple & Delightful. All it takes is 15 seconds to Download.</span>
+        <button class="btn1">DOWNLOAD</button>
+        </td>
+        </tr>
+        </table>
+        </section>
+
+         <!-- Payment Form Section -->
+         
+    <!-- Detailed Payment Form Modal -->
+<div id="payment-section" class="payment-section">
+  <button class="close-btn" onclick="closePaymentForm()">X</button>
+  <div class="outer">
+      <h2>Proceed to Payment</h2>
+
+      <form id="payment-form" onsubmit="event.preventDefault(); showConfirmationModal();">
+          <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+              <label for="card-number">Card Number</label>
+              <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+          </div>
+          <div class="form-group">
+              <label for="expiry-date">Expiry Date</label>
+              <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+          </div>
+          <div class="form-group">
+              <label for="amount">Amount</label>
+              <input type="text" id="amount" name="amount" readonly>
+          </div>
+          <button type="submit" class="paybtn1">Pay Now</button>
+      </form>
+  </div>
+</div>
+
+<!-- Confirmation Modal -->
+<div id="confirmation-modal" class="modal">
+  <div class="modalone-content">
+      <h1>Thank You!</h1>
+      <p>Your payment was successful. Your order will arrive soon.</p>
+      <button onclick="closeConfirmationModal()">OK</button>
+  </div>
+</div>
+ 
+        
+        
+        
+        <footer>
+        <div class="footer">
+        <ul>
+        <li>SHOPING NOW</li>
+        <li>
+        <select>
+        <option value="english">English</option>
+        <option value="chinese">Chinese</option>
+        <option value="deutsch">Deutsch</option>
+        <option value="hindi">Hindi</option>
+        <option value="portuguese">Portuguese</option>
+        <option value="spanish">Spanish</option>
+        </select>
+        </li>
+        <li>
+        <select>
+        <option value="Dollar">USD: US-Dollar</option>
+        </select>
+        </li>
+        </ul>
+        
+        <ul>
+        <li class="title">OTHER LINKS</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Tickets</li>
+        <li>Customer Service</li>
+        <li>Our App</li>
+        </ul>
+        
+        <ul>
+        <li class="title">SHORTCUT</li>
+        <li>Electronics</li>
+        <li>Men & Women</li>
+        <li>House Hold</li>
+        <li>Sport & Fitness</li>
+        <li>Books</li>
+        <li>Kids Corner</li>
+        </ul>
+        
+        <ul>
+        <li class="title">LET HELP YOU</li>
+        <li>Covid-19</li>
+        <li>Your Account</li>
+        <li>Shipping Rates</li>
+        <li>Replacement</li>
+        <li>Help</li>
+        <li>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        </li>
+        </ul>
+        </div>
+        <div class="sub-footer">
+        <em>SHOPING NOW</em> Copyright © 2024 Shoping Now - All rights reserved || Designed By: Praveen Kumar
+        </div>
+        </footer>
+        
+        
+        
+        
+        <!--ADDITIONAL-->
+        <div id="id01" class="modal">
+          
+          <section class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            </section>
+        </div>
+        
+
+    <script src="example.js"></script>
+</body>
+</html>
